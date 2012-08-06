@@ -53,7 +53,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* =Header
 -------------------------------------------------------------- */
 #masthead {display:table; vertical-align:middle; position:relative; padding: 0;}
-#branding {width:200px; padding:0; clear:both; display:table-cell; vertical-align: middle;float: left;}
+#branding {width:200px; padding:0; margin-bottom:20px; clear:both; display:table-cell; vertical-align: middle;float: left;}
 #site-title {padding:0 8px; font-size:22px; font-style: italic; line-height:22px; font-family: "Hoefler Text", "Garamond", Times New Roman, Times, serif;}
 #site-title a {display: block;}
 #site-title a img {display: block; margin: 0 -8px;}
@@ -61,13 +61,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* =Menu
 -------------------------------------------------------------- */
-#access {float:left;padding:0; margin:0; clear:both; width:220px; display:table-cell; vertical-align: middle; line-height:22px; z-index:98;overflow:visible;}
+#access {float:left;padding:0; margin:0 0 20px 0; clear:both; width:220px; display:table-cell; vertical-align: middle; line-height:22px; z-index:98;overflow:visible;}
 #access .menu-header ul, 
 div.menu ul{list-style:none; margin:0}
 #access .menu-header li, 
 div.menu li{float:left; position:relative}
 
-.menu {float:right;}
+.menu {float:left;clear:both;}
 .menu ul {margin:0; padding:0;}
 .menu li {display:inline; float:left;}
 .menu li a {padding:0 12px; margin:0; display:block; font-size:12px; line-height:22px; letter-spacing:0.025em;font-weight:400;}
@@ -263,39 +263,9 @@ article footer {border-left: 1px dotted #CCC}
 /* =AutoFocus Staggered/Default Image Display
 -------------------------------------------------------------- */
 /* Default / Staggered Layout */
-.af-default #container {width:800px; overflow: hidden;}
-.af-default #content {width:804px;}
-.af-default #content .hentry {height:300px;margin:0 4px 4px 0; padding:0 16px;}
-.af-default #content .hentry.p1,
-.af-default #content .hentry.p11,
-.af-default #content .hentry.p21 {width:570px;}
-.af-default #content .hentry.p2,
-.af-default #content .hentry.p12,
-.af-default #content .hentry.p22 {width:162px;}
-.af-default #content .hentry.p3,
-.af-default #content .hentry.p13,
-.af-default #content .hentry.p23 {width:264px;}
-.af-default #content .hentry.p4,
-.af-default #content .hentry.p14,
-.af-default #content .hentry.p24 {width:468px;}
-.af-default #content .hentry.p5,
-.af-default #content .hentry.p15,
-.af-default #content .hentry.p25 {width:366px;}
-.af-default #content .hentry.p6,
-.af-default #content .hentry.p16,
-.af-default #content .hentry.p26 {width:366px;}
-.af-default #content .hentry.p7,
-.af-default #content .hentry.p17,
-.af-default #content .hentry.p27 {width:162px;}
-.af-default #content .hentry.p8,
-.af-default #content .hentry.p18,
-.af-default #content .hentry.p28 {width:570px;}
-.af-default #content .hentry.p9,
-.af-default #content .hentry.p19,
-.af-default #content .hentry.p29 {width:468px;}
-.af-default #content .hentry.p10,
-.af-default #content .hentry.p20,
-.af-default #content .hentry.p30 {width:264px;}
+.af-default #container {width:720px; overflow: hidden;}
+.af-default #content {width:720px;}
+.af-default #content .hentry {height:170px;width:220px;margin:0 20px 20px 0;}
 .af-default #content .hentry header {padding: 22px 0 0}
 .af-default #content .entry-title,
 .af-default #content .entry-date {font-size:22px}
@@ -309,7 +279,7 @@ article footer {border-left: 1px dotted #CCC}
 .af-default #content .entry-title, 
 .af-default #content .entry-date, 
 .af-default #content .entry-content {position: relative; z-index: 3; width: inherit; max-width: 478px}
-.af-default #content .entry-content p {padding: 0;line-height: 16.5px;}
+.af-default #content .entry-content p {padding: 10px;line-height: 16.5px;}
 .af-default #content .entry-content a {font-weight: 800}
 .af-default #content .entry-utility {position: absolute; top:0; right:0; z-index: 5; margin: 0; display: inline-block; width: 45px; border-width: 0;}
 .af-default #content .edit-link {text-align: center; font-size: 9px; text-transform: uppercase}

@@ -20,14 +20,10 @@
 	if ( 'page' == get_post_type() ) { ?>
 	
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-			<header>
+			<header> 
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'autofocus' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 				<?php af_posted_on(); ?>
 			</header>
-
-			<div class="entry-content">
-				<?php the_excerpt(); ?>
-			</div><!-- .entry-content -->
 
 			<?php edit_post_link( __( 'Edit', 'autofocus' ), '<footer class="entry-utility"><span class="edit-link">', '</span></footer><!-- .entry-utility -->' ); ?>			
 
